@@ -1,0 +1,91 @@
+/* Делаем заголовки первого уровня жирными (Object Sans 800 */
+.md-typeset h1 {
+  color: #000;
+  font-weight: 800;
+}
+
+/* Делаем заголовки второго уровня жирными (Object Sans 800 */
+.md-typeset h2 {
+  color: #000;
+  font-weight: 800;
+}
+
+/* Увеличиваем шрифт и жирность в заголовках третьего уровня */
+.md-typeset h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/*  Увеличиваем шрифт в таблицах */
+.md-typeset table:not([class]) {
+  font-size: 0.7rem;
+}
+
+/* Увеличиваем шрифт в информационных блоках */
+.md-typeset .admonition, .md-typeset details {
+    font-size: 0.7rem; 
+}
+
+/* Изменяем шрифт в заглавной строке таблицы */
+.md-typeset table:not([class]) th {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+/* Меняем цвет "маркера" на оранжевый
+.md-typeset mark {
+  --md-typeset-mark-color: #FFA500;
+} */
+
+/* применяем вместо кнопки элемент del (~~текст~~) */
+del {
+  text-decoration: none;
+  background-color: #FFA500;
+  color: #000;
+  padding: 2px 4px;
+  border: solid #343a40 2px;
+  white-space: nowrap;
+}
+
+/*Изменяем общий размер текста*/
+.md-typeset {
+  font-size: 0.7rem;
+}
+
+/*Верхнее меню - перенос и по центру */
+
+.md-tabs__list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* расширяем текст и меню на 90% экрана при размере дисплея больше 1220px */
+
+.md-grid {
+  max-width: 90%;
+}
+
+@media (min-width: 1220px) {
+  .md-main__inner {
+    margin-top: 0;
+  }
+
+  .md-sidebar {
+    height: auto;
+  }
+
+  .md-sidebar--primary {
+    border-right: 1px solid var(--md-default-fg-color--lightest);
+  }
+
+  .md-nav .md-nav__title {
+    display: none;
+  }
+
+  .md-nav__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: -.1rem;
+  }
+}

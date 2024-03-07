@@ -89,3 +89,26 @@ del {
     margin-top: -.1rem;
   }
 }
+
+/* Убираем у цитаты значки списков, чтобы сделать мини TOC */
+
+  .md-typeset blockquote {
+    font-size: 0.65rem;
+    ul { list-style-type: none;}
+  }
+
+/* Настройка цветов для светлой и темной тем */
+
+[data-md-color-scheme=default] {
+  --md-default-fg-color--light: 000;
+  --md-primary-fg-color: #ff6e42;
+}
+
+[data-md-color-scheme=slate] {
+  --md-default-fg-color--light: hsla(var(--md-hue), 15%, 100%, 0.8);
+  --md-primary-fg-color: #121215;
+}
+
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}

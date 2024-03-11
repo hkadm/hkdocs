@@ -40,11 +40,12 @@
 /* применяем вместо кнопки элемент del (~~текст~~) */
 del {
   text-decoration: none;
-  background-color: #FFA500;
-  color: #000;
-  padding: 2px 4px;
-  border: solid #343a40 2px;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-default-fg-color--light);
+  padding: 4px 4px;
+  border: solid var(--md-default-fg-color--light) 1px;
   white-space: nowrap;
+  border-radius: 5pt;
 }
 
 /*Изменяем общий размер текста*/
